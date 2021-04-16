@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Event" representedClassName="Event" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Coursework" representedClassName="Coursework" syncable="YES" codeGenerationType="class">
+        <attribute name="mainCourseworkName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainDueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mainLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainMark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainModuleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainStartDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mainWeight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="recordCoursework" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="recordTask" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" syncable="YES" codeGenerationType="class">
+        <attribute name="newCoursework" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskDueDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="taskFinishDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskStartDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="recordTask" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Coursework" inverseName="recordCoursework" inverseEntity="Coursework" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Coursework" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Task" positionX="142" positionY="27" width="128" height="150"/>
     </elements>
 </model>

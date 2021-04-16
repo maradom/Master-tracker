@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  master
 //
-//  Created by Martynas Adomaitis on 18/05/2018.
-//  Copyright © 2018 Martynas Adomaitis. All rights reserved.
+//  Created by Martynas Adomaitis on 19/05/2020.
+//  Copyright © 2020 Martynas Adomaitis. All rights reserved.
 //
 
 import UIKit
@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
         guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
-        if topAsDetailController.detailItem == nil {
+        if topAsDetailController.newCoursework == nil {
             // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
             return true
         }

@@ -14,6 +14,12 @@
 		12212F2820AF353C007EF7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12212F2620AF353C007EF7E7 /* Main.storyboard */; };
 		12212F2A20AF353E007EF7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12212F2920AF353E007EF7E7 /* Assets.xcassets */; };
 		12212F2D20AF353E007EF7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12212F2B20AF353E007EF7E7 /* LaunchScreen.storyboard */; };
+		12212F3520AF472C007EF7E7 /* AddCWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12212F3420AF472C007EF7E7 /* AddCWViewController.swift */; };
+		12212F3720B05BA2007EF7E7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12212F3620B05BA2007EF7E7 /* InfoViewController.swift */; };
+		12212F3920B0628A007EF7E7 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12212F3820B0628A007EF7E7 /* MainTableViewCell.swift */; };
+		12212F3B20B0B7C5007EF7E7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12212F3A20B0B7C5007EF7E7 /* AddTaskViewController.swift */; };
+		124DEF0020B1AD2900EFD929 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DEEFF20B1AD2900EFD929 /* TaskTableViewCell.swift */; };
+		12FEF49A20B2188A0001C40E /* Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 12FEF49920B2188A0001C40E /* Model.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		12212F2920AF353E007EF7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12212F2C20AF353E007EF7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12212F2E20AF353E007EF7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12212F3420AF472C007EF7E7 /* AddCWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCWViewController.swift; sourceTree = "<group>"; };
+		12212F3620B05BA2007EF7E7 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		12212F3820B0628A007EF7E7 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		12212F3A20B0B7C5007EF7E7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		124DEEFF20B1AD2900EFD929 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		12FEF49920B2188A0001C40E /* Model.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,12 @@
 				12212F2B20AF353E007EF7E7 /* LaunchScreen.storyboard */,
 				12212F2E20AF353E007EF7E7 /* Info.plist */,
 				12212F1F20AF353C007EF7E7 /* master.xcdatamodeld */,
+				12212F3420AF472C007EF7E7 /* AddCWViewController.swift */,
+				12212F3620B05BA2007EF7E7 /* InfoViewController.swift */,
+				12212F3820B0628A007EF7E7 /* MainTableViewCell.swift */,
+				12212F3A20B0B7C5007EF7E7 /* AddTaskViewController.swift */,
+				124DEEFF20B1AD2900EFD929 /* TaskTableViewCell.swift */,
+				12FEF49920B2188A0001C40E /* Model.xcmappingmodel */,
 			);
 			path = master;
 			sourceTree = "<group>";
@@ -142,9 +160,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				12212F1E20AF353C007EF7E7 /* AppDelegate.swift in Sources */,
+				12212F3B20B0B7C5007EF7E7 /* AddTaskViewController.swift in Sources */,
+				124DEF0020B1AD2900EFD929 /* TaskTableViewCell.swift in Sources */,
+				12FEF49A20B2188A0001C40E /* Model.xcmappingmodel in Sources */,
 				12212F2120AF353C007EF7E7 /* master.xcdatamodeld in Sources */,
 				12212F2320AF353C007EF7E7 /* MasterViewController.swift in Sources */,
+				12212F3920B0628A007EF7E7 /* MainTableViewCell.swift in Sources */,
 				12212F2520AF353C007EF7E7 /* DetailViewController.swift in Sources */,
+				12212F3720B05BA2007EF7E7 /* InfoViewController.swift in Sources */,
+				12212F3520AF472C007EF7E7 /* AddCWViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54D645XK54;
 				INFOPLIST_FILE = master/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54D645XK54;
 				INFOPLIST_FILE = master/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
